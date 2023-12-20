@@ -23,6 +23,7 @@ body a {
   background-color: rebeccapurple;
   font-weight: 700;
   padding: 5px 15px 5px 15px;
+  animation: rotate 3s infinite;
 }
 
 .header {
@@ -81,6 +82,16 @@ footer {
   display: block;
   text-align: center;
   margin-top: 10px;
+  animation: rotate 2s infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
 }
 
 ul > li:last-child {
